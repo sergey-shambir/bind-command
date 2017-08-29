@@ -4,7 +4,7 @@ C++17 example of function type erasure with automated conversion to original typ
 ```cpp
 using Command = function<string(const vector<string>&)>;
 Command command = BindCommand([](int a, int b) {
-			 return a + b;
+    return a + b;
 });
 
 // returns 12+7=19
